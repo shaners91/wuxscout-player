@@ -16,7 +16,7 @@
     error.className = 'player-error';
     error.textContent = text;
     frameHost.append(error);
-    message.textContent = 'Close this window and try the item again from WuxScout.';
+    message.textContent = 'Close review mode and try the item again from WuxScout.';
   };
 
   const params = new URLSearchParams(window.location.hash.replace(/^#/, ''));
