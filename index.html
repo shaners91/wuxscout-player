@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; frame-src https://player.twitch.tv https://clips.twitch.tv; base-uri 'none'; form-action 'none'; object-src 'none'"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <title>WuxScout Player</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./player.js" defer></script>
+  </head>
+  <body>
+    <main class="player-shell">
+      <header class="player-header">
+        <div>
+          <p class="eyebrow">WuxScout</p>
+          <h1 id="player-title">Twitch player</h1>
+        </div>
+        <a id="open-on-twitch" class="external-link" hidden target="_blank" rel="noopener noreferrer">
+          Open on Twitch
+        </a>
+      </header>
+
+      <section id="player-frame" class="player-frame" aria-live="polite">
+        <div class="loading">Preparing the Twitch player…</div>
+      </section>
+
+      <p id="player-message" class="player-message">
+        Playback is provided by Twitch. WuxScout does not receive or store Twitch credentials here.
+      </p>
+    </main>
+  </body>
+</html>
