@@ -116,3 +116,35 @@ h1 {
     flex-direction: column;
   }
 }
+
+html.embedded,
+html.embedded body {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  background: #050407;
+}
+
+.embedded .player-shell {
+  width: 100%;
+  min-height: 0;
+  height: 100%;
+  padding: 0;
+}
+
+.embedded .player-header,
+.embedded .player-message {
+  display: none;
+}
+
+.embedded .player-frame {
+  width: 100%;
+  min-height: 0;
+  height: 100%;
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}

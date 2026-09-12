@@ -6,6 +6,9 @@
   const message = document.querySelector('#player-message');
   const externalLink = document.querySelector('#open-on-twitch');
 
+  if (window.self !== window.top) document.documentElement.classList.add('embedded');
+  window.addEventListener('hashchange', () => window.location.reload());
+
   const showError = (text) => {
     title.textContent = 'Player unavailable';
     frameHost.replaceChildren();
